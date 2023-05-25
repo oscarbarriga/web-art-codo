@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: #000;
+}
+h1, h2, h3, h4, h5{
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+nav{
+    max-width: 1000px;
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;   
+    padding-top: 50px;
+    z-index: 1000;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    overflow: hidden;
+    margin: 0;
+}
+nav ul li a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+nav ul li a:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+footer{
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+}
+.contenedorcarusel1{
+    width: auto;
+    margin-top: 60px;
+}
+.centrarnav{
+    margin: auto;
+    display: flex;
+    max-width: 1000px;
+}
+.logo{
+    width: 30px;
+    float: right;
+}
+.contenedortop{
+    width: 50%;
+    max-width: 1000px; /*ancho máximo de la página*/
+    margin: 20px auto; /*auto permite centrar nuestra página en forma horizontal*/
+    display: flex;
+    flex-direction: column ;
+    text-align: center;
+    margin-top: 75px;
+}
+.contenedorressumen{
+    width: 90%;
+    max-width: 1000px; /*ancho máximo de la página*/
+    margin: 20px auto; /*auto permite centrar nuestra página en forma horizontal*/
+    display: grid;
+    gap: 20px; /*nos ahorramos tenes que poner márgenes entre los elementos*/
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "encabezado encabezado encabezado"
+                         "sidebar contenido contenido"                        
+}
+.contenedorobras{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 40px 0;
+    overflow: hidden;
+}
+.contenedorobras >a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    border-radius: 0.373rem;
+}
+.contenedorobras img{
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+.contenedorobras a:hover img{
+    filter: blur(1px);
+    transform: scale(1.03);
+}
+.light-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    z-index: 1100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+.light-box img{
+    width: 80%;
+    max-width: 600px;
+    border-radius: 0.373rem;
+}
+.light-box >div{
+    text-align: center;
+    color: #fff;
+}
+.light-box:target{
+    transform: scale(1);
+}
+.close{
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+.next{
+    display: block;
+    color: #fff;
+    width: 20px;
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+.contenedorabout {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "imgartista aboutartist";
+}
+.contenedorpie{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "pie pie";
+}
+.contenedorressumen .sidebar{   
+    grid-area: sidebar; 
+    margin-top: 15px;
+}
+.contenedorressumen .contenido{
+    background: #fff;
+    grid-area: contenido; 
+    margin-top: 50px;
+}
+.contenedorabout .imgartista{
+    grid-area: imgartista;
+}
+.contenedorabout .aboutartist{
+    grid-area: aboutartist; 
+}
+.imgartista{
+    width: 100%;
+    display: flex;
+}
+.titlesection{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    scroll-margin-top: 4ex ;
+}
+.contenedorredes{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    padding-top: 20px;
+} 
+.contenedorredes img{
+    height: 30px;
+}
+.copy{
+    text-align: center;
+    margin-top: 20px;
+}
+.cardartista{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+.cardartista .card .infocards{
+    padding: 15px;
+}
+.cardartista .card .infocards h3{
+    text-align: center;
+}
+.cardartista .card .cardimg a img{
+    width: 100%;
+}
+.cardimg{
+    display: flex;
+    flex-direction: column;
+}
+.titlehomeart{
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+}
+.card{
+    max-width: 300px;
+}
+@media screen and (max-width: 768px){
+    .contenedorressumen{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "encabezado encabezado encabezado"
+                             "sidebar sidebar sidebar"
+                             "contenido contenido contenido";
+    }
+    .contenedorabout{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "imgartista"
+                             "aboutartist";
+    }
+    .contenedorobras{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 450px){
+    nav ul{
+        font-size: 12px;
+    }
+    .contenedortop{
+        width: 85%;
+    }
+    .contenedorressumen{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "encabezado encabezado"
+                             "sidebar sidebar"
+                             "contenido contenido";
+    }
+    .contenedorabout{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "imgartista"
+                             "aboutartist";
+    }
+    .contenedorobras{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cardartista{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .close{
+        top: 65px;
+        right: 50px;
+    }
+}

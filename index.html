@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+<title>Expo Andy</title>
+</head>
+<body>
+
+
+    <header>
+
+      <nav class="navbar navbar-dark bg-dark fixed-top" id="bg-darkprueba" style="background-color: #fff !important;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img class="logo" src="img/pruebaobrasdestmin.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation" style="border: 1px #000000 solid;  padding: 5px;">
+            <span class="navbar-toggler-icon"><img src="./img/menuicon.svg" alt=""></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#artistashome">Artistas</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Exposiciones
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="./expowarhol.html">Andy Warhol</a></li>
+                    <li><a class="dropdown-item" href="./expopicasso.html">Pablo Picasso</a></li>
+                    <li><a class="dropdown-item" href="./expodali.html">Salvador Dalí</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+          
+            </div>
+          </div>
+        </div>
+      </nav>
+
+     
+    </header>
+
+    <main class="contenedorcarusel1">
+
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./img/warholhomebaner.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <a href="./expowarhol.html" style="text-decoration: none; color: #000000;"><h2>Andy Warhol</h2></a>
+              <p>Julio 5 - Agosto 10 del 2023.</p>
+              <h3>New York</h3>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./img/picassolhomebaner.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <a href="./expopicasso.html"  style="text-decoration: none; color: #000000;"><h2>Pablo Picasso</h2></a>
+              <p>Julio 5 - Agosto 10 del 2023.</p>
+              <h3>New York</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/dalilhomebaner.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <a href="./expodali.html" style="text-decoration: none; color: #000000;"><h2>Salvador Dalí</h2></a>
+              <p>Julio 5 - Agosto 10 del 2023.</p>
+              <h3>New York</h3>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+
+<section id="artistashome">
+  <div class="titlehomeart">
+    <h2>Artistas</h2>
+  </div>
+<div class="cardartista">
+  <article class="card">
+    <div class="cardimg"><a href="./expowarhol.html#aboutart"><img src="./img/andyarts.jpg" alt=""></a></div>
+    <div class="infocards">
+    <h3>Andy Warhol</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorum dolor, in ipsum esse mollitia placeat, debitis culpa quaerat, totam consequatur perferendis dolore enim neque et atque. Molestias, atque maxime?</p>
+  </div>
+  </article>
+  <article class="card">
+    <div class="cardimg"><a href="./expopicasso.html#aboutart"><img src="./img/picassoarts-01.jpg" alt=""></a></div>
+    <div class="infocards">
+    <h3>Pablo Picasso</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorum dolor, in ipsum esse mollitia placeat, debitis culpa quaerat, totam consequatur perferendis dolore enim neque et atque. Molestias, atque maxime?</p>
+    </div>
+  </article>
+  <article class="card">
+    <div class="cardimg"><a href="./expodali.html#aboutart"><img src="./img/daliarts.jpg" alt=""></a></div>
+    <div class="infocards">
+    <h3>Salvador Dalí</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorum dolor, in ipsum esse mollitia placeat, debitis culpa quaerat, totam consequatur perferendis dolore enim neque et atque. Molestias, atque maxime?</p>
+    </div>
+  </article>
+
+</div>
+
+</section>
+
+      
+
+    
+    
+        <footer>
+            <hr>
+            <div class="contenedorredes">
+              <i><img src="./img/twitter.svg" alt=""></i>               
+              <i><img src="./img/instagram.svg" alt=""></i>
+              <i><img src="./img/facebook-f.svg" alt=""></i>
+              <i><img src="./img/youtube.svg" alt=""></i>
+            </div>
+            <div>
+                <p class="copy">2023 TPO codo a codo. 23014 / Todos los derechos reservados.</p>
+            </div>
+        
+        </footer>
+    
+        
+
+    <script src="./js/bootstrap.bundle.min.js">
+    </script>
+    
+</body>
+</html>
